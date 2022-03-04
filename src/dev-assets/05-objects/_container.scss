@@ -1,0 +1,49 @@
+.o-container {
+    margin-left: auto;
+    margin-right: auto;
+    // padding-left: $gutter;
+    // padding-right: $gutter;
+    width: 100%;
+
+    &--about-us {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    &--board {
+        background-color: $white-gray;
+        padding-bottom: $grid-base*7.2;
+        padding-top: $grid-base*7.2;
+    }
+
+    &--contact-form {
+        padding-top: $grid-base*14.4;
+    }
+    
+    &--menu {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+        background: #fff;
+        padding-bottom: 5px;
+        position: fixed;
+        z-index: 9;
+
+        @include large-up {
+            min-width: 1280px;
+        }
+    }
+    
+    &--primary {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    @include medium-up {
+        min-width: 960px;
+    }
+
+    @include large-up {
+        min-width: 1280px;
+    }
+}

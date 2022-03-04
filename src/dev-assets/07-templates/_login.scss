@@ -1,0 +1,100 @@
+.t-login {
+	max-height: 100%;
+	max-width: 100%;
+	padding-top: $grid-base *20;
+	// margin-top: $grid-base*5.6;
+
+	&__buttons {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__off {
+		align-items: center;
+		display: flex;
+		justify-content: center;
+	}
+	
+	.t-form-box {
+		align-self: center;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: $gutter *13.5;
+		// margin: 0 auto;
+		width: $gutter*33.4;
+		
+		.t-form-login {
+			align-self: center;
+			// background-color: #f0f1f1;
+			background-color: $white-gray;
+			display: flex;
+      flex-direction: column;
+			margin-bottom: $grid-base *5;
+			padding-bottom: $grid-base*4;
+			padding-left: $gutter*4.5;
+			padding-right: $gutter*4.5;
+			padding-top: $grid-base*4;
+			width: $gutter*25.6;
+
+			label {
+				color: #3c3c3c;
+				font-weight: $gray-dark;
+				font-size: $font-size-5;
+				margin-bottom: 10px;
+			}
+			
+			input {
+				background-color: transparent;
+				border: none;
+				border-bottom: 1px solid #707070;
+				padding: $grid-base 20px;
+				
+				&:focus {
+					outline-width: 3px;
+					outline-offset: 2px;
+					border-color: $light-blue;
+					box-shadow: 0 0 10px $light-blue;
+				}
+			}
+		}
+		
+		.buttons-box {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			
+			a {
+				display: block;
+				text-decoration: none;
+				text-align: center;
+			}
+			
+			button {
+				background-color: transparent;
+				border: none;
+				cursor: pointer;
+				display: block;
+				padding: 0;
+				margin: 0;
+			}
+			
+			button,
+			a {
+				border: 0.75px solid transparent;
+				color: #000;
+				font-family: $font-base;
+				font-size: 1.125em;
+				font-weight: 300;
+				padding: 13px 15px;
+				transition: 0.3s;
+				
+				&:hover {
+					border-color: #3c3c3c;
+				}
+			}
+		}
+	}
+	}
+	
+	

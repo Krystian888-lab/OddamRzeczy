@@ -1,0 +1,55 @@
+.o-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    // margin-left: -$gutter;
+    // margin-right: -$gutter;
+
+    @include medium-up {
+        flex-direction: row;
+    }
+    
+    &--badge {
+        flex-direction: row;
+        margin-bottom: $grid-base*3.2;
+    }
+
+    &--center-y {
+        align-items: center;
+    }
+
+    &--center-z {
+        align-items: center;
+        position: relative;
+        z-index: 2;
+    }
+
+    &--four-steps {
+        padding-left: $gutter*11;
+        padding-right: $gutter*11;
+    }
+
+    &--login {
+        flex-direction: column;
+        align-self: center;
+    }
+
+    &--outlined {
+        justify-content: center;
+        margin-top: $grid-base*3.2;
+    }
+
+    &--stats {
+        display: flex;
+        padding-left: 8%;
+        padding-right: 8%;
+        padding-bottom: $grid-base*8;
+        padding-top: $grid-base*8;
+    }
+
+    &--help {
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: $grid-base*7.2;
+    }
+}

@@ -1,0 +1,21 @@
+.t-post-list {
+    color: $brown;
+    padding: 0 $gutter*3.4;
+
+    &__stats {
+        color: $brown;
+        font-size: $font-size-1*2;
+        font-weight: 300;
+        margin-bottom: $grid-base;
+    }
+
+    &__scors {
+        font-weight: 500;
+        line-height: $line-height-base;
+        margin-bottom: $grid-base*2;
+    }
+
+    &__text {
+        font-weight: 300;
+    }
+}

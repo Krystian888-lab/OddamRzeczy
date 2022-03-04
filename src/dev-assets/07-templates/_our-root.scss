@@ -1,0 +1,40 @@
+.t-our-root {
+    height: $grid-base * 76.3;
+    padding-bottom: $grid-base * 6;
+    padding-top: $grid-base * 9;
+
+    &__left {
+        height: $grid-base * 65.5;
+        background:  url('./../../assets/Home-Hero-Image.jpg') no-repeat right /cover;
+
+        @include medium-up {
+            margin-bottom: 0;
+        }
+    }
+
+    &__right {
+        align-items: flex-end;
+        display: flex;
+        height: $grid-base * 62;
+        max-width: 42%;
+        // text-align: center;
+
+        @include medium-up {
+            padding-right: $grid-base * 6.4;
+            // text-align: center;
+        }
+    }
+
+    &__top {
+        align-items: flex-end;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    &__buttons {
+        display: flex;
+        margin: -$grid-base * 2;
+        margin-top: $grid-base * 4.5;
+        width: calc(100% + 40px);
+    }
+}

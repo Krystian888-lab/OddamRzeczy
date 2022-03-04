@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+$brown: #5e5322;
+$black: #000;
+$gold: #FAD648;
+$gray-dark: #3C3C3C;
+$gray-dim: #707070;
+$gray-light: #737373;
+$light-gray: rgba(60, 60, 60, 0.04);
+$light-blue: #9ecaed;
+$white:  #FFF;
+$white-gray: #F0F1F1;
+
+$font-base: 'Open Sans', sans-serif;
+$font-alt: 'Merriweather', serif;
+
+// Tekst
+$font-size-base: 1rem; // ~16px
+$font-size-1: $font-size-base * 3; // ~48px
+$font-size-2: $font-size-base * 2.25; // ~36px
+$font-size-3: $font-size-base * 1.5; // 24px
+$font-size-4: $font-size-base * 1.125; // ~18px
+$font-size-5: $font-size-base * 1; // ~16px
+$font-size-6: $font-size-base * .875; // ~14px
+$font-size-7: $font-size-base * .75; // ~12px
+$font-size-8: $font-size-base * .625; // ~10px
+
+$line-height-base: 1.6;
+$line-height-sm: 1.2;
+$line-heigt-av: 1.5;
+$line-height-lg: 1.8;
+
+// Siatka
+$grid-base: 10px;
+$gutter: $grid-base * 1.5;
+
+// Breakpoint
+$bp-medium: '800px';
+$bp-large: '1200px';

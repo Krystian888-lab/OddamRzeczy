@@ -1,0 +1,220 @@
+.t-contact-form {
+  
+  background-image: url('./../../assets/Background-Contact-Form.jpg') ;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 970px;
+  margin: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+  
+  &::before {
+    width: 100%;
+    height: 100%;
+    content: '';
+    display: block;
+    z-index: 1;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  // padding-top: 144px;
+}
+
+.t-contact {
+
+  &--right {
+  margin: 0;
+  padding: 0; 
+  
+  max-width: $gutter*30;
+  }
+
+  &--left {
+    flex-grow: 0;
+    max-width: 58.333333%;
+    flex-basis: 58.333333%;
+  }
+}
+
+.t-form {
+
+  &--button {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: flex-end;
+    margin-top: 32px;
+  }
+
+  &__btn {
+    background-color: transparent;
+    width: 150px;
+    border: 1px solid #3C3C3C;
+    font-size: 1.2rem;
+    min-height: 50px;
+    font-weight: 300;
+    border-radius: 0;
+    text-transform: none;
+
+    padding: 6px 8px;
+
+    min-width: 64px;
+
+    line-height: 1.75;
+
+    cursor: pointer;
+    margin: 0;
+    display: inline-flex;
+    outline: 0;
+
+    position: relative;
+    align-items: center;
+    user-select: none;
+
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  &--control {
+    margin-top: $grid-base*9;
+    width: $gutter*30
+  }
+  
+  &__input {
+    // :focus
+    margin-top: 6px;
+    
+    position: relative;
+    
+    padding: 6px 0 7px;
+    
+    color: #3C3C3C;
+    cursor: text;
+    // display: inline-flex;
+    font-size: 18px;
+    box-sizing: border-box;
+    align-items: center;
+    font-family: Open Sans;
+    font-weight: 400;
+    line-height: 1.1876em;
+
+    textarea {
+        border: none;
+        border-bottom: 1px solid #707070;
+        background-color: transparent;
+        font-family: $font-base;
+        font-size: 18px;
+        resize: none;
+        width: 95%;
+  
+        &::placeholder {
+          font-size: 18px;
+          opacity: 0.3;
+          padding: 0;
+        }
+  
+        &:focus {
+          outline-width: 3px;
+          outline-offset: 2px;
+          border-color: none;
+          border: 0;
+          box-shadow: 0 0 10px #9ecaed;
+        }
+      }
+    
+  }
+
+  &__half-page {
+    border: 0;
+    margin: 0;
+    display: inline-flex;
+    position: relative;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    flex-basis: 50%;
+    padding-right: 8px;
+  }
+
+  &--message {
+    margin-top: 32px;
+    padding: 0;
+    border: 0;
+    width: 100%;
+
+  }
+  
+  &--message-page {
+    margin-bottom: 8px;
+    width: 100%;
+  }
+
+  &__label {
+
+      // display: block;
+			font-weight: 600;
+			margin-bottom: 0.3em;
+      max-width: 256px;
+      // line-height: 2;
+
+    &__in {
+      font-size: 16px;
+      font-family: Open Sans, Semibold;
+      max-height: 22px;
+      letter-spacing: 0px;
+    }
+
+    input {
+			border: none;
+			border-bottom: 1px solid #707070;
+			background-color: transparent;
+			font-family: $font-base;
+      font-size: 18px;
+			width: 90%;
+
+			&::placeholder {
+				font-size: 18px;
+				opacity: 0.3;
+				padding: 0;
+			}
+
+			&:focus {
+				outline-width: 3px;
+				outline-offset: 2px;
+				border-color: #9ecaed;
+				box-shadow: 0 0 10px #9ecaed;
+			}
+		}
+
+
+  }
+
+  &__error {
+    margin-top: 6px;
+    
+    position: relative;
+    
+    padding: 6px 0 7px;
+    
+    color: #3C3C3C;
+    cursor: text;
+    // display: inline-flex;
+    font-size: 18px;
+    box-sizing: border-box;
+    align-items: center;
+    font-family: Open Sans;
+    font-weight: 400;
+    line-height: 1.1876em;
+
+
+    color: #f44336;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+
+}

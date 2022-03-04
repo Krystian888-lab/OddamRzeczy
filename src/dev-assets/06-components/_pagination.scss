@@ -1,0 +1,30 @@
+.c-pagination {
+
+    &--list {
+        display: flex;
+        
+    }
+
+    &__accent {
+
+        border: 1px solid #3C3C3C ;
+        // font-family: Open Sans;
+    }
+
+    &__item {
+        font-family: $font-base;
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.75;
+        min-height: $gutter*3.4;
+        min-width: $grid-base*4;
+        margin-left: $grid-base * .8;
+        margin-right: $grid-base * .8;
+        padding: 0 $gutter*0.3;
+
+        // -webkit-appearance: none;
+        // -webkit-tap-highlight-color: transparent;
+    }
+
+    
+}
