@@ -11,12 +11,7 @@ const MenuLogin = () => {
   if (user) {
    console.log(user);
    setEmail(user.email);
-  } else {
-   // User is signed out
-   // ...
-   
-   
-  }
+  } 
  });
 
  return (

@@ -1,36 +1,36 @@
 .t-about-us {
-  background-color: $white-gray;
-  
-  &__image {
-    background: url('./../../assets/People.jpg') no-repeat left/cover;
-    height: $grid-base*93.5;
-  }
+ background-color: $white-gray;
 
-  &__contnet {
-      align-self: center;
-      width: 62%;
-  }
+ &__image {
+  background: url('./../../assets/People.jpg') no-repeat left/cover;
+  height: $grid-base*93.5;
+ }
 
-  &__left {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    height: $grid-base*93.5;
-  }
+ &__contnet {
+  align-self: center;
+  width: 62%;
+ }
 
-  &__right {
-    flex-grow: 0;
-    max-width: 50%;
-    flex-basis: 50%;
-    padding-right: 0;
-  }
+ &__left {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: $grid-base*93.5;
+ }
 
-  &__text {
-    font-size: $font-size-3;
-    font-weight: 400;
-    line-height: 2;
-    margin-bottom: 36px;
-    margin-top: $grid-base*4;
-    text-align: center;
-  }
+ &__right {
+  flex-grow: 0;
+  max-width: 50%;
+  flex-basis: 50%;
+  padding-right: 0;
+ }
+
+ &__text {
+  font-size: $font-size-3;
+  font-weight: 400;
+  line-height: 2;
+  margin-bottom: 36px;
+  margin-top: $grid-base*4;
+  text-align: center;
+ }
 }

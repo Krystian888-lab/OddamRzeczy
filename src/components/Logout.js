@@ -1,15 +1,9 @@
-import React, {useCallback} from "react";
+import React from "react";
 import {NavLink} from "react-router-dom";
-import  from './../firebase/firebase.utils';
+
 
 const Logout = () => {
- const handleLogout = useCallback(async () => {
-  try {
-   .auth().signOut();
-  } catch (err) {
-    console.log(err);
-  }
-}, []);
+ 
 
 return (
     <section className="t-login">
@@ -20,7 +14,7 @@ return (
         <div className="c-icon-box__image margin__botom-top"></div>
         <div className="t-login__off">
         <NavLink exact to="/" 
-        onClick={handleLogout}
+        
         className="c-btn c-heading--level4 c-btn__login c-btn__start">Strona główna</NavLink>
         </div>
         </div>

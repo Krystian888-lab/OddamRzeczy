@@ -1,24 +1,24 @@
 .t-site-header {
 
-    &__menu {
-        display: flex;
-        justify-content: flex-end;
-        margin-top: $grid-base * 0.5;
+ &__menu {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: $grid-base * 0.5;
 
-        @include large-up {
-            margin-top: $grid-base * 0.8;
-            // text-align: right;
-        }
-    }
+  @include large-up {
+   margin-top: $grid-base * 0.8;
+   // text-align: right;
+  }
+ }
 
-    &__logo {
-        display: flex;
-        justify-content: flex-end;
-        margin-top: $grid-base 0.5;
+ &__logo {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: $grid-base 0.5;
 
-        @include large-up {
-            margin-top: $grid-base * 1.6;
-            // text-align: right;
-        }
-    }
+  @include large-up {
+   margin-top: $grid-base * 1.6;
+   // text-align: right;
+  }
+ }
 }
