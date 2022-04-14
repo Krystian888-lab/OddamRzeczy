@@ -120,17 +120,23 @@ const ContactUsInputs = () => {
     </div>
 
     <div className="t-form__half-page">
-     <div className="t-form__label">
-
-      <label className="t-form__label">Wpisz swój email</label>
+     <div className="t-form__input-field">
+      
       <input type="email"
        name="email"
        value={email}
-       placeholder="abc@xyz.pl"
+       //placeholder="abc@xyz.pl"
        onChange={handleChange}
-       className={errors.email ? "t-form__error" : "t-form__input"}
+       className={errors.email ? "t-form__error" : "t-form__input-field--input"}
+       required
       />
-      <div className="t-form__error">
+
+      <label
+       className="t-form__input-field--label"
+       >Wpisz swój email</label>
+      <div 
+      //className="t-form__error"
+      >
        {errors.email}
       </div>
 

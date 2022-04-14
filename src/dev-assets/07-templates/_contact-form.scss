@@ -101,7 +101,6 @@
     // opacity: 0.3;
     padding: 0;
    }
-
   }
  }
 
@@ -142,12 +141,12 @@
   &--input {
    font-size: 18px;
    border: none;
-   border-bottom: 2px solid #757575;
+   border-bottom: 2px solid $black;
    height: -40px;
    position: absolute;
    top: 0;
    left: 0;
-   padding: 10px 10px 10px 5px;
+   padding: 12px 15px 25px 5px;
    
    outline: none;
    width: 100%;
@@ -170,11 +169,13 @@
    transition: top 200ms ease-in,
     left 200ms ease-in,
     font-size 200ms ease-in;
-
   }
  }
+ &__input-field--input, &__label-field--input {
+  border-color: $black;
+ }
 
- &__input-field--input:focus {
+ &__input-field--input:focus, &__label-field--input:focus {
   border-color: $light-blue;
  }
 
@@ -184,7 +185,6 @@
   top: -24px;
   left: 8px;
   color: $light-blue;
-
  }
 
  &__error {
